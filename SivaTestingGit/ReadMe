@@ -1,0 +1,21 @@
+Notes to Add ssh key to Git:
+
+Step 1: To Create sshkey on the local 
+
+        ssh-keygen
+        Enter the file name ~/.ssh/id_rsa
+        Enter Password
+        It will create a private Key called id_rsa and public key called id_rsa.pub
+
+Step 2: Copy the public Key and paste it on remote Git
+
+        cat id_rsa.pub
+        copy the content
+        Go to remote Git - click on Top Left Setting
+        click on ssh/GPG KEys 
+        paste your id_rsa.pub there
+ 
+Step 3: On the local add ur sshkeys and clone the git ussing ssh command
+     
+        ssh-add ~/.ssh/id_rsa
+        git clone git@github.com:Shadowblaster/TestGit.git         
